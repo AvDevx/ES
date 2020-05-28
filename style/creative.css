@@ -1,0 +1,100 @@
+body{
+  background-color:black;
+  color:white;
+  display:flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.logo > img{
+  padding: 70px 0px 0px 70px;
+  transform: scale(0.7);
+}
+header > h1{
+  padding-left: 100px;
+  padding-top: 120px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+h1 > span {
+  letter-spacing: 15px;
+}
+.container{
+  width:100vw;
+  height:100vh;
+  transform: translateY(-70px);
+  overflow: hidden;
+}
+.text{
+  padding: 0 100px;
+  font-size: 5vh;
+  visibility: hidden;
+}
+
+
+@keyframes clip{
+  0%{
+    clip-path: circle(0% at 0% 55%);
+  }
+  100%{
+    clip-path: circle(100%);
+  }
+}
+@keyframes clipan{
+  0%{
+    clip-path: circle(0% at 0% 55%);
+  }
+  100%{
+    clip-path: circle(100%);
+  }
+}
+@keyframes clipans{
+  0%{
+    clip-path: circle(0% at 0% 55%);
+  }
+  100%{
+    clip-path: circle(100%);
+  }
+}
+
+
+
+
+
+.btn-outline{
+    padding: 15px 35px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    letter-spacing: 5px;
+    position: fixed;
+    bottom: 100px;
+    left: 120px
+}
+ .btn-outline:hover .icon{
+    animation: slide1 1s ease-in-out infinite;
+}
+.btn-outline:hover{
+    background-color: white;
+    color: rgb(65, 65, 65);
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    transition: all 1 ease-in;
+}
+.overlay{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
+}
