@@ -101,6 +101,9 @@ h1 > span {
 }
 
 @media only screen and (max-width: 600px) {
+    body, header, .container{
+      overflow: hidden;
+    }
     .logo > img{
       padding-top: 20px;
     }
